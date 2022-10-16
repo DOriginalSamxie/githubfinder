@@ -12,7 +12,7 @@ import Spinner from '../components/layout/Spinner'
 import GithubContext from '../context/github/GithubContext'
 import { useParams } from 'react-router-dom'
 
-function User({}) {
+function User() {
   const { getUser, user, loading } = useContext(GithubContext)
 
   const params = useParams()
