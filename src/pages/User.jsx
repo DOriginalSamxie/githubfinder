@@ -1,10 +1,4 @@
-import {
-  FaBullhorn,
-  FaCodepen,
-  FaStore,
-  FaUserFriends,
-  FaUsers,
-} from 'react-icons/fa'
+import { FaCodepen, FaStore, FaUserFriends, FaUsers } from 'react-icons/fa'
 import { useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import Spinner from '../components/layout/Spinner'
@@ -51,7 +45,7 @@ function User() {
         <div className='custom-card-image mb-6 md:mb-0'>
           <div className='rounded-lg shadow-xl card image-full'>
             <figure>
-              <img src={avatar_url} />
+              <img src={avatar_url} alt='avatarurl' />
             </figure>
             <div className='card-body justify-end '>
               <h2 className='card-title mb-0'>{name}</h2>
